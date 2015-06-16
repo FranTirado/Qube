@@ -33,7 +33,7 @@ def hostlist():
         #print job_agenda[frame]['name'], job_agenda[frame]['host']
         hosttext.write(job_agenda[frame]['name'] + ' ' + job_agenda[frame]['host'] + '\n')
 
-hostlist()
+# hostlist()
 
 
 
