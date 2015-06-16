@@ -25,9 +25,15 @@ def hostlist():
 
     job_agenda_temp = {}
 
-    for frame in xrange(len(job_agenda)):
-        print job_agenda[frame]['name'], job_agenda[frame]['host']
+    #Creacion de un archivo de texto
+    hosttext = open("T:\\renderfarm\\amp\\Documents\\HostList\\" + renderID + "_Hostlist.txt", 'w')
 
+    # Recorre los frames del JOB, te muestra en pantalla y te lo copia al archivo de texto
+    for frame in xrange(len(job_agenda)):
+        #print job_agenda[frame]['name'], job_agenda[frame]['host']
+        hosttext.write(job_agenda[frame]['name'] + ' ' + job_agenda[frame]['host'] + '\n')
+
+hostlist()
 
 
 
